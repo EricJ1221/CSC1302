@@ -1,33 +1,38 @@
-// Demo Student
-import java.util
+//Eric Oliver, Olivere, 5/23/2021, I will be correcting any syntax errors present in this program.
 
-public class conefixme {
-   public statis void main (String[] args) {
+import java.util.Scanner;
+
+public class ConeFixMe {
+   public static void main(String[] args) {
    
-      println("This porgram corrected by Demo Student.);
+      System.out.println("This program was corrected by Eric Oliver.");
       
       // Get input
-      Scanner input = new scanner (System.in);
+      Scanner input = new Scanner(System.in);
       System.out.print("Enter a value for the radius: ");
-      double radius = input.nextInt();
-      System.out.print("Enter a value for the height:");
-      int height = input.nextDouble();
+      double radius = input.nextDouble();
+      System.out.print("Enter a value for the height: ");
+      int height = input.nextInt();
       
-      int pi = 3.14159;
-      // calculate slant using Pythagorena theorem
-      double hypotenuse = radius * radius + height * height;
+      final double PI = 3.14159;
+      
+      // calculate slant using Pythagorean theorem
+      double hypotenuse = Math.sqrt((radius * radius + height * height));
       
       // calculuate volume
-      double volume = 1/3 * pi * radius * radius * Height;
+      double volume = ( PI * radius * radius * ((height)/3));
       
       // calculuate lateral area
-      double latArea = pi * radius * hypotenuse + Radius;
+      double latArea = (PI * radius * hypotenuse);
+      
+      // calculuate surface area
+      double surArea = (PI * radius *(hypotenuse + radius));
       
       // display input
       System.out.println("Cone Measurements");
       System.out.println("radius: " + height);
       System.out.println("height: " + radius);
-      System.out.println("slant: " , hypotenuse);
+      System.out.println("slant: " + hypotenuse);
       
       // output results
       System.out.println("Volume = " + volume);
@@ -37,6 +42,6 @@ public class conefixme {
       // check your answer here:
       // https://www.calculatorsoup.com/calculators/geometry-solids/cone.php
     } //end main
-    
+}    
     
     
