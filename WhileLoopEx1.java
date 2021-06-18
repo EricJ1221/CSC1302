@@ -4,15 +4,20 @@
 
 public class WhileLoopEx1{
    public static void main(String[] args){
-      int sum = 0;
-      int count = 0;
-      while(count <= 100){
-         if(count % 2 == 0){
-            sum += count;
-         }
-         count++;
-         System.out.println(count + " , " + sum); 
+      int number = 9;
+      int i;
+      boolean isPrime = true;
+         for(i = 2; i < number&& isPrime; i++){
+            if(number % i == 0){
+               isPrime = false;
+            }
+         }    
+         System.out.println("i is " + i);
          
-      }
+         if(isPrime)
+            System.out.println(number + "is prime");
+         else
+            System.out.println(number + "is not prime");   
+            
    }
 }

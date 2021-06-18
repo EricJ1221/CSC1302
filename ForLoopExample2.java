@@ -13,11 +13,11 @@ public class ForLoopExample2{
          System.out.print(i + " | ");
          for(int j = 1; j <=9; j++) {
             System.out.printf("%4d", i * j);
-            int x = i * j;
+            
              
         }
         System.out.println();
-     }      
+      }      
    }
 }
    
