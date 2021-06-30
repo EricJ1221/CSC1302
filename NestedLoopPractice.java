@@ -8,11 +8,11 @@ public class NestedLoopPractice{
       
       // Moves cursor to next line
       for(int i = 1; i <= 7; i++){
-         // Printes 7 through 2
-         for(int j = numLines; j > 1; j--){
+         //Prints 7 through 2
+         for(int j = 7 * 2 - 1; j > 1; j--){
             if(j <= i) {
                System.out.print(j + " ");
-            } else {
+           } else {
                System.out.print("  ");
             }
             
@@ -28,10 +28,11 @@ public class NestedLoopPractice{
                System.out.print("  ");
             }
           }
+         System.out.println(); 
+         }
          
-         System.out.println();
       }
    }
-}
+
 
 
